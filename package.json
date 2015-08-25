@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/gulp",
-    "test": "./node_modules/.bin/jest"
+    "test": "./node_modules/.bin/jest",
+    "build:umd": "webpack lib/ReactCanvas.js dist/react-canvas.js && NODE_ENV=production webpack lib/ReactCanvas.js dist/react-canvas.min.js"
   },
   "keywords": [
     "react",
